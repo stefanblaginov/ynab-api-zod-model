@@ -1,0 +1,41 @@
+{
+  "name": "ynab-api-zod-model",
+  "version": "1.0.0",
+  "description": "Zod validation and TS model for the YNAB API.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "prepublish": "npm run build",
+    "start": "npm run build && node build/index.js",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanblaginov/ynab-api-zod-model.git"
+  },
+  "keywords": [
+    "revolut",
+    "zod",
+    "model",
+    "validation"
+  ],
+  "author": "Stefan Blaginov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefanblaginov/ynab-api-zod-model/issues"
+  },
+  "homepage": "https://github.com/stefanblaginov/ynab-api-zod-model#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.13",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "eslint": "^8.29.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "zod": "^3.19.1"
+  }
+}
